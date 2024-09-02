@@ -27,7 +27,7 @@ app.use(cors());
 
 // /(root route)
 app.get("/", (req, res) => {
-  res.send(database.users);
+  res.send("It is working");
 });
 
 // /signin
@@ -55,6 +55,6 @@ app.post("/imageUrl", (req, res) => {
   image.handleApiCall(req, res, req.body.input);
 });
 
-app.listen(5000, () => {
-  console.log("Server listening on port 5000");
+app.listen(process.env.PORT || 5000, () => {
+  console.log(`Server listening on port ${process.env.PORT}`);
 });
