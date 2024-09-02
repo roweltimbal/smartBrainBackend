@@ -1,5 +1,4 @@
 const { response } = require("express");
-const fetch = require("node-fetch");
 
 const PAT = process.env.CLARIFAI_PAT;
 const MODEL_ID = "face-detection";
