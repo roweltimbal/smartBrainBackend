@@ -8,14 +8,25 @@ const signin = require("./controllers/singin");
 const profile = require("./controllers/profile");
 const image = require("./controllers/image");
 
+// const db = knex({
+//   client: "pg",
+//   connection: {
+//     host: "127.0.0.1",
+//     port: 5432,
+//     user: "postgres",
+//     password: "postGre",
+//     database: "smart-brain",
+//   },
+// });
+
 const db = knex({
   client: "pg",
   connection: {
-    host: "127.0.0.1",
+    host: "dpg-crb474l6l47c73d2fv3g-a",
     port: 5432,
-    user: "postgres",
-    password: "postGre",
-    database: "smart-brain",
+    user: "rowel",
+    password: "rDK7CZWz0EgExQaTIir7KtnOwUWZrUhK",
+    database: "smart_brain_8arm",
   },
 });
 
