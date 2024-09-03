@@ -25,7 +25,7 @@ const db = knex({
     host: "dpg-crb474l6l47c73d2fv3g-a",
     port: 5432,
     user: "rowel",
-    password: "rDK7CZWz0EgExQaTIir7KtnOwUWZrUhK",
+    password: process.env.DB_PASS,
     database: "smart_brain_8arm",
   },
 });
